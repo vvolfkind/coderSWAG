@@ -12,3 +12,6 @@
 */
 
 Route::get('/', 'HomeController@index');
+
+Route::get('/productos', 'ProductsController@index');
+Route::get('/categorias', 'CategoriesController@index');
