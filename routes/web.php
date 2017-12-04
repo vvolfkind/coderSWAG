@@ -11,7 +11,24 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', function () {
+    return view('index');
+});
 
-Route::get('/productos', 'ProductsController@index');
-Route::get('/categorias', 'CategoriesController@index');
+Route::get('/home', function () {
+    return view('welcome');
+});
+
+Route::get('/index', "RutaController@mostrar");
+
+Route::get('/productos', "ProductosController@mostrar");
+
+Route::get('/buzos', "ProductosController@show");
+
+Route::get('/remeras','ProductosController@muestra');
+
+//Route::get("/index", "HomeController@index");//
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
