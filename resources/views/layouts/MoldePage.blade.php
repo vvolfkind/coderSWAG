@@ -45,7 +45,7 @@
 					<a class="js-scroll-trigger" href="{{ route('login') }}">Iniciar Sesion</a>
 				</li>
 				<li>
-					<a class="js-scroll-trigger" 
+					<a class="js-scroll-trigger" href="/productos"
 					 onclick=$( "#menu-close").click();>PRODUCTOS</a>
 				</li>
 			</ul>
