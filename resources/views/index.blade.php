@@ -13,132 +13,54 @@
 		<!-- Services -->
 		<section id="services"> 
 			<div style="background-color:white" , class="container">
-				<div class="row text-center">
-					<div class="col-lg-10 mx-auto">
-						<h2>Nuestro servicio</h2>
-						<hr class="small">
-						<div class="row">
-							<div class="col-md-4 col-sm-8">
-								<div class="service-item">
-									<img src="img/idea.png">
-									<h4>
-										<strong>Personalizado</strong>
-									</h4>
-									<p>Modelos únicos pensados para cada persona.</p>
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
 
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-8">
-								<div class="service-item">
-								<img src="img/money.png">
-									<h4>
-										<strong>Accesible</strong>
-									</h4>
-									<p>El mejor precio, siempre.</p>
-
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-8">
-								<div class="service-item">
-								 <img src="img/deliver.png">
-									<h4>
-										<strong>Rápido</strong>
-									</h4>
-									<p>Sabemos lo importante que es el tiempo.</p>
-								 
-								</div>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item-active">
+							<img src="catalog/bigdata.jpg">
+							<div class="carousel-caption">
 							</div>
 						</div>
-						<!-- /.row (nested) -->
+
+						<div class="item">
+							<img src="catalog/cofeeshirt.jpg">
+							<div class="carousel-caption">
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="catalog/csshtml.jpg">
+							<div class="carousel-caption">
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="catalog/eatsleepcode.jpg">
+							<div class="carousel-caption">
+							</div>
+						</div>
 					</div>
-					<!-- /.col-lg-10 -->
-				</div>
-				<!-- /.row -->
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 			</div>
-			<!-- /.container -->
-		</section>
+		</div>
+	</section>
 
-		<!-- Callout -->
-		<aside class="callout">
-			<div class="text-vertical-center">
-				<h1 >Diseñamos con pasión</h1>
-			</div>
-		</aside>
 
-		<!-- Portfolio -->
-		<div class="card-columns">
-	<div class="card">
-	
-		<div class="card-block">
-			<h4 class="card-title">   Algunos de nuestros productos </h4>
-			<p class="card-text"> DESCRIPCION</p>
-		</div>
-	</div>
-	<div class="card p-3">
-		<blockquote class="card-block card-blockquote">
-			<p>DESCRIPCION</p>
-			<footer>
-				<small class="text-muted">
-				 CoderSWAG <cite title="Source Title"></cite>
-				</small>
-			</footer>
-		</blockquote>
-	</div>
-	<div class="card">
-		<img class="card-img-top img-fluid" src="..." alt="Card image cap">
-		<div class="card-block">
-			<h4 class="card-title">Producto</h4>
-			<p class="card-text">DESCRIPCION</p>
-			<p class="card-text"><small class="text-muted"></small></p>
-		</div>
-	</div>
-	<div class="card card-inverse card-primary p-3 text-center">
-		<blockquote class="card-blockquote">
-			<p>DESCRIPCION</p>
-			<footer>
-				<small>
-				 CoderSWAG <cite title="Source Title"></cite>
-				</small>
-			</footer>
-		</blockquote>
-	</div>
-	<div class="card text-center">
-		<div class="card-block">
-			<h4 class="card-title">Producto</h4>
-			<p class="card-text">DESCRIPCION.</p>
-			<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-		</div>
-	</div>
-	<div class="card">
-		<img class="card-img img-fluid" src="..." alt="Card image">
-	</div>
-	<div class="card p-3 text-right">
-		<blockquote class="card-blockquote">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-			<footer>
-				<small class="text-muted">
-				 CoderSWAG <cite title="Source Title"></cite>
-				</small>
-			</footer>
-		</blockquote>
-	</div>
-	<div class="card">
-		<div class="card-block">
-			<h4 class="card-title">Producto</h4>
-			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-			<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-		</div>
-	</div>
-</div>
-						<!-- /.row (nested) -->
-					 
-					 <!-- /.container -->
-		</section>
-
-		<!-- Call to Action -->
-		<aside class="call-to-action bg-primary text-white aside1">
-			<div class="container text-center">
-				<h3>¿Todavía no tenes tu cuenta? CREALA YA!.</h3>
-				<a href="#" class="btn btn-lg btn-light">Registrarme!</a>
-		</aside>
 @endsection
