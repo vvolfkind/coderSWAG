@@ -9,6 +9,9 @@ class RutaController extends Controller
    Public function mostrar(){
    return view('index');
    }
-
+  
+    public function subir(){
+   	return view('subir');
+   }
 
 }

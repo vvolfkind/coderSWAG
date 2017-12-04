@@ -27,6 +27,8 @@ Route::get('/buzos', "ProductosController@show");
 
 Route::get('/remeras','ProductosController@muestra');
 
+Route::get('/subir', 'RutaController@subir');
+
 //Route::get("/index", "HomeController@index");//
 
 Auth::routes();
