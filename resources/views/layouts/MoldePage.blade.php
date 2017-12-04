@@ -11,7 +11,7 @@
 
 		<!-- Bootstrap Core CSS -->
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 		<!-- Custom Fonts -->
@@ -33,10 +33,7 @@
 					<i class="fa fa-times"></i>
 				</a>
 				<li class="sidebar-brand">
-					<a class="js-scroll-trigger" href="#top">CoderSWAG</a>
-				</li>
-				<li>
-					<a class="js-scroll-trigger" href="index">Home</a>
+					<a class="js-scroll-trigger" href="index">CoderSWAG</a>
 				</li>
 				<li>
 					<a class="js-scroll-trigger" href="#about">Sobre Nosotros</a>
@@ -56,10 +53,15 @@
 
 		<!-- Header -->
 		<header class="header" id="top">
-			<div class="t">
-				<h1 style="color:white;">Coder<strong>SWAG</strong></h1>
-				<h3 style="margin-left:120px; ">Diseños para  programadores</h3>
-				<br>
+			<div class="row col-md-12">
+				<div class="banner text text-center">
+					<div>
+						<img class="mainlogo" src="img/logo.png">
+					</div>
+					<div>
+						@yield("forms")
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -84,7 +86,7 @@
 								Contactos</li>
 							<li>
 								<i class="fa fa-envelope-o fa-fw"></i>
-								<a style="color:white"; href="mailto:name@example.com">CoderSWAG@gmail.com</a>
+								<a style="color:white"; href="mailto:info@codersswag.com">info@codersswag.com</a>
 							</li>
 						</ul>
 						<br>
@@ -124,6 +126,7 @@
 		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<!-- Custom scripts for this template -->
 		<script src="js/stylish-portfolio.js"></script>
+		<script type="text/javascript" scr="scroll.js"></script>
 </body>
 
 </html>

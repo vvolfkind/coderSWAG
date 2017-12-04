@@ -1,18 +1,13 @@
-/*!
- * Start Bootstrap - Stylish Portfolio (https://startbootstrap.com/template-overviews/stylish-portfolio)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
- */
-
-/* Global Styles */
-.p{
-  font-size: 20px;
-
+* {
+  box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
+html,
+body {
+  background-color: #fff;
+  font-weight: 100;
+  height: 100vh;
+  margin: 0;
 }
 
 body {
@@ -158,16 +153,28 @@ hr.small {
 
 .header {
   position: relative;
-  display: table;
+  display: grid;
   width: 100%;
   height: 100%;
-  background: url(../img/bg.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url(../img/bg2.jpg) no-repeat center center scroll;
   background-size: cover;
 }
+.banner {
+  display: inline;
+}
+ .mainlogo {
+  position: absolute;
+  max-width:350px;
+  top: 25%;
+  left: 25%;
 
+ }
+
+ .formsheader{
+  padding-top: 50%;
+  display: block;
+  right: 50%;
+ }
 
 /* About */
 
@@ -313,4 +320,5 @@ footer {
 .aside1{
   background-color:#1d1b1b!important;
 }
+ 
 
