@@ -34,27 +34,19 @@
 				<li class="sidebar-brand">
 					<a class="js-scroll-trigger" href="index"><img src="img/logo.png"></a>
 				</li>
+				<div class="spacer"></div>
 				<li>
-					<a class="js-scroll-trigger" href="#about">Sobre Nosotros</a>
+					<a class="js-scroll-trigger" href="#about">SOBRE NOSOTROS</a>
 				</li>
 				<li>
-					<a class="js-scroll-trigger" href="{{route('register')}}">Registrarme</a>
+					<a class="js-scroll-trigger" href="{{route('register')}}">REGISTRARME</a>
 				</li>
 				<li>
-					<a class="js-scroll-trigger" href="{{ route('login') }}">Iniciar Sesion</a>
+					<a class="js-scroll-trigger" href="{{ route('login') }}">INICIAR SESION</a>
 				</li>
 				<li>
 					<a class="js-scroll-trigger" href="/productos"
 					 onclick=$( "#menu-close").click();>PRODUCTOS</a>
-				</li>
-				<li>
-					<a class="js-scroll-trigger" href="#">Buzos</a>
-				</li>
-				<li>
-					<a class="js-scroll-trigger" href="#">Remeras</a>
-				</li>
-				<li>
-					<a class="js-scroll-trigger" href="#">Miscelaneos</a>
 				</li>
 			</ul>
 		</nav>
@@ -64,7 +56,7 @@
 			<div class="row col-md-12">
 				<div class="banner text text-center">
 					<div>
-						<a href="index"><img class="mainlogo" src="img/logo.png"></a>
+						<a href="index"><img data-tilt class="mainlogo" src="img/logo.png"></a>
 					</div>
 					<div>
 						@yield("forms")
@@ -80,6 +72,7 @@
 		</section>
 		<footer>
 			<div class="row">
+				<img class="footerback" src="img/footerlogos.png">
 				<div class="col-md-2"> </div>
 				<section class="col-md-3">
 				<i class="fa fa-envelope-o fa-fw"></i>
@@ -89,13 +82,13 @@
 				<section class="col-md-3">
 					<ul class="">
 						<li class="">
-							<a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+							<a href="https://www.facebook.com"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
 						</li>
 						<li class="">
-							<a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+							<a href="https://www.twitter.com"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
 						</li>
 						<li class="">
-							<a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+							<a href="https://www.instagram.com"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
 						</li>
 					</ul>
 				</section>
@@ -107,6 +100,8 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		crossorigin="anonymous"></script>
 		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
 		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<!-- Custom scripts for this template -->
 		<script src="js/stylish-portfolio.js"></script>
