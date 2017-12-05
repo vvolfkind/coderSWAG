@@ -29,8 +29,10 @@ Route::get('/remeras','ProductosController@muestra');
 
 Route::get('/subir', 'RutaController@subir');
 
-//Route::get("/index", "HomeController@index");//
+Route::post('/productos', "ProductosController@store");
 
+//Route::get("/index", "HomeController@index");//
+Route::post('/subir', 'ProductosController@store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class propertie extends Model
 {
-    //
+    public function products() {
+    return $this->belongsToMany('\App\Product', 'product_property', 'property_id', 'product_id');
+}
 }
