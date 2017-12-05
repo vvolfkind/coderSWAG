@@ -7,16 +7,7 @@
 			 }
 		</style>
 
-		<section id="about" class="about">
-			<div class="container text-center">
-				<h2>Conocemos el fanatismo por la programación</h2>
-				<h3 style="color:#326B8E">Diseñamos pensando en vos.</h3>
-			</div>
-
-		</section>
-		<section id="services" 
-		"> 
-			<div style="background-color:white" , class="container">
+			<div class="container">
 				<div class="row text-center">
 					<div class="text-center">
 						<h2 class="pro"><strong>Nuestros productos</strong></h2>
@@ -63,6 +54,7 @@
 								</div>
 							</div>
 						</div>
+						<a href="index" style="font-size: 20px;">Volver al inicio</a>
 
 						<div class="spacer"></div>
 
@@ -77,17 +69,6 @@
 		</section>
 
 
+			<div class="spacer"></div>
 
-
-
-		<!-- Call to Action -->
-		<aside class="call-to-action  text-white">
-			<div class="container text-center">
-				<h3><strong>¿Qué esperas?</strong></h3>
-				<h3><strong> Busca tu diseño personalizado.</strong></h3>
-				<h3><strong> !COMPRA YA!.</strong></h3>
-				<br>
-
-				<a href="buzos" class="btn btn-lg btn-light">¡VER TODOS!</a>
-		</aside>
 @endsection

@@ -53,7 +53,7 @@ ul li {
 .btn-dark {
 	color: #fff;
 	border: none;
-	border-radius: 6px;
+	border-radius: 4px;
 	background-color: rgba(0, 0, 0, 1);
 }
 
@@ -66,7 +66,6 @@ ul li {
 	color: #333;
 	border: none;
 	border-radius: 2px;
-	background-color: rgb(255, 255, 255);
 }
 
 .btn-light:hover, .btn-light:focus, .btn-light:active {
@@ -97,7 +96,7 @@ hr.small {
 	-o-transition: all .4s ease 0s;
 	transition: all .4s ease 0s;
 	transform: translateX(250px);
-	background: rgba(35, 140, 138, 0.8);
+	background: rgba(35, 140, 138, 0.9);
 }
 
 .sidebar-nav {
@@ -159,11 +158,11 @@ hr.small {
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	right: 0;
+	left: 0;
 }
 
 #sidebar-wrapper.active {
-	right: 250px;
+	left: -250px;
 	width: 250px;
 	-webkit-transition: all .4s ease 0s;
 	-moz-transition: all .4s ease 0s;
@@ -210,8 +209,14 @@ hr.small {
 /* About */
 
 .about {
-	padding: 50px 0;
+	height: 100vh;
+	align-content: center;
+	margin-top: 200px;
+}
 
+.boxes {
+	height: 100vh;
+	width: 100vw;
 }
 
 h3{
@@ -248,30 +253,40 @@ text-align: center;
 /* Footer */
 
 footer {
-	padding: 70px;
 	background-color:#238c8a;
+	position:absolute;
+	left:0px;
+
+	height:190px;
+	width:100%;
+
 }
 .footerback {
-	opacity: 0.3;
+	opacity: 0.1;
 	position: absolute;
-	justify-content: flex-start;
+	justify-content: center;
 	max-width: 100vw;
 	right: 0px;
 	background-color: #238c8a; 
 }
 
 footer li {
-	display: inline-flex;
+	display: inline-block;
 	list-style: none;
 }
 
 footer i {
 	color: white;
+	font-weight: 100;
+	margin-top: 80px;
+	text-shadow: 3px 3px rgba(0,0,0, 0.5);
 }
 footer a {
 	font-size: 20px;
 	font-weight: 100;
 	color: white;
+	margin-left: 90px;
+	text-shadow: 3px 3px rgba(0,0,0, 0.5);
 }
 
 #to-top {
@@ -294,8 +309,9 @@ footer a {
 }
 .linksvarios{
 	color: white;
-	font-size: 19px;
+	font-size: 14px;
 }
+
 .aside1{
 	background-color:#1d1b1b!important;
 }

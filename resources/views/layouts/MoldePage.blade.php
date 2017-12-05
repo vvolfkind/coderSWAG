@@ -70,29 +70,25 @@
 		<section class="container">
 		@yield("contenido")
 		</section>
-		<footer>
+		<footer style="justify-content: center;">
 			<div class="row">
 				<img class="footerback" src="img/footerlogos.png">
-				<div class="col-md-2"> </div>
-				<section class="col-md-3">
-				<i class="fa fa-envelope-o fa-fw"></i>
-				<a href="mailto:info@codersswag.com"> info@codersswag.com</a>
+				<section class="col-md-6">
+					<a href="mailto:info@codersswag.com"><i class="fa fa-envelope-o fa-fw"></i>info@codersswag.com</a>
 				</section>
-				<div class="col-md-2"> </div>
-				<section class="col-md-3">
+				<section class="col-md-6">
 					<ul class="">
 						<li class="">
-							<a href="https://www.facebook.com"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+							<a href="https://www.facebook.com"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
 						</li>
 						<li class="">
-							<a href="https://www.twitter.com"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+							<a href="https://www.twitter.com"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
 						</li>
 						<li class="">
-							<a href="https://www.instagram.com"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+							<a href="https://www.instagram.com"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
 						</li>
 					</ul>
 				</section>
-				<div class="col-md-2"></div>
 			</div>
 		</footer>
 
