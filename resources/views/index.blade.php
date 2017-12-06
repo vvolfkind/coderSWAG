@@ -20,7 +20,7 @@
 				</article>
 				<article class="col-md-3">
 					<img class="imgtestimonio" src="customers/26101432.jpeg">
-					<h4><i><q>Como diria Agus... MUY ASTUTO!</q></i></h4>
+					<h4><i><q>Me ceba eh! Como diria Agus... MUY ASTUTO!</q></i></h4>
 				</article>
 				<article class="col-md-3">
 					<img class="imgtestimonio" src="customers/turdferguson.jpg">
