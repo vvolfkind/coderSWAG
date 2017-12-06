@@ -11,52 +11,56 @@ class ProductosController extends Controller
 		return view('productos');
 	}
 
-	public function show(){
+	public function mostrarBuzos(){
 		 return view('buzos');
 	}
 
-	public function muestra(){
+	public function mostrarRemeras(){
 		return view('remeras');
+	}
+
+	public function  mostrarMisc(){
+		return view('misc');
 	}
 
 
 public function store(Request $request) {
 
-    $rules = [
-        "name" => "required|unique:products",
-        "cost" => "required|numeric",
-        "category_id" => "required|numeric|between:1,3"
-    ];
+	$rules = [
+		"name" => "required|unique:products",
+		"cost" => "required|numeric",
+		"category_id" => "required|numeric|between:1,3"
+	];
 
-    $messages = [
-        "required" => "El :attribute es requerido!",
-        "unique" => "El :attribute tiene que ser único!",
-        "between" => "El :attribute tiene que estar entre :min y :max."
-    ];
+	$messages = [
+		"required" => "El :attribute es requerido!",
+		"unique" => "El :attribute tiene que ser único!",
+		"between" => "El :attribute tiene que estar entre :min y :max."
+	];
 
-    $request->validate($rules, $messages);
+	$request->validate($rules, $messages);
 
 
 
-    $extensionImagen = $request->file('fotoPath')->getClientOriginalExtension();
+	$extensionImagen = $request->file('fotoPath')->getClientOriginalExtension();
 
-    $fotoPath = $request->file('fotoPath')->storeAs('productos', uniqid() . "." . $extensionImagen, 'public');
-    
+	$fotoPath = $request->file('fotoPath')->storeAs('productos', uniqid() . "." . $extensionImagen, 'public');
+	
 
-    $product = \App\product::create([
-        'name' => $request->input('name'),
-        'cost' => $request->input('cost'),
-        'fotopath' => $fotoPath
-    ]);
+	$product = \App\product::create([
+		'name' => $request->input('name'),
+		'cost' => $request->input('cost'),
+		'fotopath' => $fotoPath
+	]);
 
-    
+	
 
-    $category = \App\categorie::find($request->input('category_id'));
+	$category = \App\categorie::find($request->input('category_id'));
 
-    $product->properties()->sync($request->input('properties'));
-    $product->category()->associate($category);
-    $product->save();
+	$product->properties()->sync($request->input('properties'));
+	$product->category()->associate($category);
+	$product->save();
 
-    return redirect('/productos');
+	return redirect('/productos');
 }
 }

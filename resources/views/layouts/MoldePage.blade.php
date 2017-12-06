@@ -7,7 +7,7 @@
 		<meta name="author" content="">
 		
 		<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
-		<title>CoderSWAG</title>
+		<title>Coder's SWAG!</title>
 
 		<!-- Bootstrap Core CSS -->
 		<!-- Latest compiled and minified CSS -->

@@ -17,19 +17,19 @@
 							<div class="col-xs-4">
 								<div class="">
 									<h4><strong>Remeras</strong></h4>
-									<img src="catalog/csshtml.jpg">
+									<a href="remeras"><img src="catalog/csshtml.jpg"></a>
 								</div>
 							</div>
 							<div class="col-xs-4">
 								<div class="">
 									<h4><strong>Buzos</strong></h4>
-									<img src="catalog/pythonhoodie.png">
+									<a href="buzos"><img src="catalog/pythonhoodie.png"></a>
 								</div>
 							</div>
 							<div class="col-xs-4">
 								<div class="">
 								<h4><strong>Musculosas</strong></h4>
-								<img style="max-height:180px;" src="catalog/javascripttank.jpg">
+								<a href="remeras"><img style="max-height:180px;" src="catalog/javascripttank.jpg"></a>
 								</div>
 							</div>
 						</div>
@@ -38,19 +38,19 @@
 							<div class="col-xs-4">
 								<div class="">
 									<h4><strong>Tazas</strong></h4>
-									<img src="catalog/archmug.png">
+									<a href="misc"><img src="catalog/archmug.png"></a>
 								</div>
 							</div>
 							<div class="col-xs-4">
 								<div class="">
 									<h4><strong>Stickers</strong></h4>
-									<img style="max-height:170px;" src="catalog/angularsticker.png">
+									<a href="misc"><img style="max-height:170px;" src="catalog/angularsticker.png"></a>
 								</div>
 							</div>
 							<div class="col-xs-4">
 								<div class="">
 								<h4><strong>Pins</strong></h4>
-								<img src="catalog/gitpin.png">
+								<a href="misc"><img src="catalog/gitpin.png"></a>
 								</div>
 							</div>
 						</div>

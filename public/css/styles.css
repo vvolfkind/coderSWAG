@@ -316,3 +316,43 @@ footer a {
 	background-color:#1d1b1b!important;
 }
 
+/* GRILLA DE PRODUCTOS */
+
+.productsgrid {
+	margin-top: 10vh;
+	margin-left: 10vw;
+	margin-bottom: 10vh;
+	display: grid;
+	grid-row-gap: 2px;
+	grid-gap: 5px;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(auto-fit, 200px);
+	height: 100vh;
+}
+.buybtn {
+	height: 25px;
+	width: 65px;
+	background-color: #f4cb42;
+	border-radius: 6px;
+	box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.buybtn a {
+	font-family: 'Barlow', bold;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	overflow: hidden;
+
+}
+
+.shirtsize {
+	max-width: 176px;
+}
+.imgtestimonio {
+	max-width: 150px;
+	border-radius: 100%;
+}
+.testimonials {
+	justify-content: center;
+	margin-left: 200px;
+}

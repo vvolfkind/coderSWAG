@@ -23,9 +23,11 @@ Route::get('/index', "RutaController@mostrar");
 
 Route::get('/productos', "ProductosController@mostrar");
 
-Route::get('/buzos', "ProductosController@show");
+Route::get('/buzos', "ProductosController@mostrarBuzos");
 
-Route::get('/remeras','ProductosController@muestra');
+Route::get('/remeras','ProductosController@mostrarRemeras');
+
+Route::get('/misc','ProductosController@mostrarMisc');
 
 Route::get('/subir', 'RutaController@subir');
 
