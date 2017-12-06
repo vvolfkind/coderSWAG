@@ -29,6 +29,8 @@ Route::get('/remeras','ProductosController@mostrarRemeras');
 
 Route::get('/misc','ProductosController@mostrarMisc');
 
+Route::get('/hbo', 'ProductosController@hboShop');
+
 Route::get('/subir', 'RutaController@subir');
 
 Route::post('/productos', "ProductosController@store");

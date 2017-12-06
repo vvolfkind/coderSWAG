@@ -192,26 +192,26 @@ hr.small {
 	display: inline;
 	margin-top: 20px;
 }
- .mainlogo {
+.mainlogo {
 	position: absolute;
 	max-width:350px;
 	top: 25%;
 	left: 25%;
 
- }
+}
 
- .formsheader{
+.formsheader{
 	padding-top: 50%;
 	display: block;
 	right: 50%;
- }
+}
 
 /* About */
 
 .about {
 	height: 100vh;
 	align-content: center;
-	margin-top: 200px;
+	margin-top: 250px;
 }
 
 .boxes {
@@ -256,8 +256,8 @@ footer {
 	background-color:#238c8a;
 	position:absolute;
 	left:0px;
-
-	height:190px;
+	z-index: 2;
+	height:170px;
 	width:100%;
 
 }
@@ -273,9 +273,11 @@ footer {
 footer li {
 	display: inline-block;
 	list-style: none;
+	z-index: 2;
 }
 
 footer i {
+	z-index: 10;
 	color: white;
 	font-weight: 100;
 	margin-top: 80px;
@@ -285,6 +287,7 @@ footer a {
 	font-size: 20px;
 	font-weight: 100;
 	color: white;
+	z-index: 10;
 	margin-left: 90px;
 	text-shadow: 3px 3px rgba(0,0,0, 0.5);
 }
@@ -355,4 +358,8 @@ footer a {
 .testimonials {
 	justify-content: center;
 	margin-left: 200px;
+}
+.altheader {
+	position: absolute;
+	justify-content: center;
 }

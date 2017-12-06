@@ -22,6 +22,9 @@ class ProductosController extends Controller
 	public function  mostrarMisc(){
 		return view('misc');
 	}
+	public function hboShop(){
+		return view('hbo');
+	}
 
 
 public function store(Request $request) {
