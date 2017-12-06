@@ -34,9 +34,15 @@ Route::get('/hbo', 'ProductosController@hboShop');
 Route::get('/subir', 'RutaController@subir');
 
 Route::post('/productos', "ProductosController@store");
+Route::get('/productos/{id}','ProductosController@traer');
 
 //Route::get("/index", "HomeController@index");//
 Route::post('/subir', 'ProductosController@store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('todosProductos', "ProductosController@todos");
+
+

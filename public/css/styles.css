@@ -223,6 +223,11 @@ h3{
 	color:#CEDBD4;
 }
 
+.pp{
+	font-size: 50px;
+	color:white;
+	font-weight:500;
+}
 h1{
  color:white;
  font-size: 80px;
@@ -231,6 +236,14 @@ text-align: center;
  margin-right:750px
 }
 
+.ll{
+margin-top: 280px;
+margin-left: 50px;
+}
+
+.log{
+background: url(../img/bg2.jpg) no-repeat center center scroll;
+}
 
 /* Portfolio */
 

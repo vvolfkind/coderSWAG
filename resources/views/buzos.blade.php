@@ -116,7 +116,6 @@
 			</select>
 		</article>
 	</div>
-
 	<div class="text text-center"><a href="productos">VOLVER</a></div>
 	<div class="spacer"></div>
 	<div class="spacer"></div>

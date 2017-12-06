@@ -32,7 +32,8 @@ public function store(Request $request) {
 	$rules = [
 		"name" => "required|unique:products",
 		"cost" => "required|numeric",
-		"category_id" => "required|numeric|between:1,3"
+		"category_id" => "required|numeric|between:1,3",
+		"fotoPath" => "required",
 	];
 
 	$messages = [
@@ -66,4 +67,18 @@ public function store(Request $request) {
 
 	return redirect('/productos');
 }
+	public function traer($id) {
+		
+		$products = \App\product::where('category_id', "=", $id)->get();
+		
+		$VAC= compact('products');
+		return view('buzos')->with($VAC);
+	}
+
+	public function todos(){
+		$products = \App\product::all();
+	
+		return view('buzos',compact('products'));
+	}
+
 }
