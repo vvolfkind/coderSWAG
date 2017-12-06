@@ -1,4 +1,4 @@
-@extends('layouts.moldePage')
+@extends('layouts.MoldePage')
 
 @section('forms')
 	<div class="col-md-4 col-md-offset-8 login">

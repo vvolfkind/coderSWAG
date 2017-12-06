@@ -1,4 +1,4 @@
-@extends('layouts.moldepage')
+@extends('layouts.MoldePage')
 
 @section('forms')
 

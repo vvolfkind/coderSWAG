@@ -1,4 +1,4 @@
-@extends("layouts.moldePage")
+@extends("layouts.MoldePage")
 @section('contenido')
 
 <style>
