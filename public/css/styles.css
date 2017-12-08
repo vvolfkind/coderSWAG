@@ -213,7 +213,6 @@ hr.small {
 	align-content: center;
 	margin-top:50px;
 }
-
 .boxes {
 	height: 100vh;
 	width: 100vw;
@@ -377,7 +376,10 @@ footer a {
 	justify-content: center;
 }
 
-@media(max-width:768){
-	
+@media screen and (max-width:768px){
+
+.testimonials{
+	margin-left: 10px;
+}
 
 }
