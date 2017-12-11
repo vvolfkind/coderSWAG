@@ -23,47 +23,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-		<!-- Navigation -->
-		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
-			<i class="fa fa-bars"></i>
-		</a>
-		<nav id="sidebar-wrapper">
-			<ul class="sidebar-nav">
-				<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
-					<i class="fa fa-times"></i>
-				</a>
-				<li class="sidebar-brand">
-					<a class="js-scroll-trigger" href="index"><img src="img/logo.png"></a>
-				</li>
-				<div class="spacer"></div>
-				<li>
-					<a class="js-scroll-trigger" href="index#about">SOBRE NOSOTROS</a>
-				</li>
-				<li>
-					<a class="js-scroll-trigger" href="{{route('register')}}">REGISTRARME</a>
-				</li>
-				<li>
-					<a class="js-scroll-trigger" href="{{ route('login') }}">INICIAR SESION</a>
-				</li>
-				<li>
-					<a class="js-scroll-trigger" href="/productos"
-					 onclick=$( "#menu-close").click();>PRODUCTOS</a>
-				</li>
-			</ul>
-		</nav>
-
-		<!-- Header -->
-		<header class="header" id="top">
-			<div class="row col-md-12">
-				<div class="banner text text-center">
-					<div>
-						<a href="index"><img data-tilt class="mainlogo" src="img/logo.png"></a>
-					</div>
-					<div>
-						@yield("forms")
-					</div>
-=======
 	<div class="container-fluid">
 		<div class="row">
 				<!-- Header -->
@@ -71,7 +30,6 @@
 				<div class="banner text col-sm-offset-2">
 					<a href="/index"><img data-tilt class="mainlogo img-responsive" src="img/logo.png"></a>
 					@yield("forms")
->>>>>>> front-end
 				</div>
 			</header>
 			<!-- Navigation -->
