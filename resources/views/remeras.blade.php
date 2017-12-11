@@ -5,10 +5,14 @@
 			display: none;
 		}
 	</style>
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+	<h2 class="text-center"><strong>NUESTRAS REMERAS</strong></h2>
 
 	<div class="productsgrid">
-		<article class="">
-			<img src="catalog/gitshirt.png">
+		<article class="article-prod">
+			<img class="shirtsize" src="catalog/html5black.png">
 			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
 			<select>
 				<option value="xs">XS</option>
@@ -19,8 +23,8 @@
 				<option value="xxl">XXL</option>
 			</select>
 		</article>
-		<article class="">
-			<img src="catalog/linuxcrimeshirt.png">
+		<article class="article-prod">
+			<img class="shirtsize" src="catalog/html5green.png">
 			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
 			<select>
 				<option value="xs">XS</option>
@@ -31,8 +35,8 @@
 				<option value="xxl">XXL</option>
 			</select>
 		</article>
-		<article class="">
-			<img class="shirtsize" src="catalog/javascripttank.jpg">
+		<article class="article-prod">
+			<img class="shirtsize" src="catalog/html5blue.png">
 			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
 			<select>
 				<option value="xs">XS</option>
@@ -43,8 +47,8 @@
 				<option value="xxl">XXL</option>
 			</select>
 		</article>
-		<article class="">
-			<img src="catalog/pythonshirt.png">
+		<article class="article-prod">
+			<img class="shirtsize" src="catalog/reactblack.png">
 			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
 			<select>
 				<option value="xs">XS</option>
@@ -55,8 +59,8 @@
 				<option value="xxl">XXL</option>
 			</select>
 		</article>
-		<article class="">
-			<img src="catalog/gitshirt.png">
+		<article class="article-prod">
+			<img class="shirtsize" src="catalog/reactgreen.png">
 			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
 			<select>
 				<option value="xs">XS</option>
@@ -67,8 +71,8 @@
 				<option value="xxl">XXL</option>
 			</select>
 		</article>
-		<article class="">
-			<img src="catalog/linuxcrimeshirt.png">
+		<article class="article-prod">
+			<img class="shirtsize" src="catalog/reactblue.png">
 			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
 			<select>
 				<option value="xs">XS</option>
@@ -79,8 +83,8 @@
 				<option value="xxl">XXL</option>
 			</select>
 		</article>
-		<article class="">
-			<img class="shirtsize" src="catalog/javascripttank.jpg">
+		<article class="article-prod">
+			<img class="shirtsize" src="catalog/html5blue.png">
 			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
 			<select>
 				<option value="xs">XS</option>
@@ -91,8 +95,8 @@
 				<option value="xxl">XXL</option>
 			</select>
 		</article>
-		<article class="">
-			<img src="catalog/pythonshirt.png">
+		<article class="article-prod">
+			<img class="shirtsize" src="catalog/reactblack.png">
 			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
 			<select>
 				<option value="xs">XS</option>
@@ -103,8 +107,9 @@
 				<option value="xxl">XXL</option>
 			</select>
 		</article>
-		
 	</div>
+	<div class="spacer"></div>
+	<div class="spacer"></div>
 	<div class="text text-center"><a href="productos">VOLVER</a></div>
 	<div class="spacer"></div>
 	<div class="spacer"></div>

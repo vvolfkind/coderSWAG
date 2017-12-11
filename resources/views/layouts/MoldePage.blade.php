@@ -37,7 +37,7 @@
 				</li>
 				<div class="spacer"></div>
 				<li>
-					<a class="js-scroll-trigger" href="#about">SOBRE NOSOTROS</a>
+					<a class="js-scroll-trigger" href="index#about">SOBRE NOSOTROS</a>
 				</li>
 				<li>
 					<a class="js-scroll-trigger" href="{{route('register')}}">REGISTRARME</a>
