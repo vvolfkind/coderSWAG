@@ -379,6 +379,11 @@ footer a {
 	.formsheader {
 	padding-top: 10%;
 }
+	.register .formsheader {
+		padding-top: 5%;
+	}
+
+
 	.imgtestimonio {
 		width: 250px;
 	}
