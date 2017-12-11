@@ -1,9 +1,9 @@
 @extends('layouts.MoldePage')
 
 @section('forms')
-	<div class="col-md-4 col-md-offset-8 login">
+	<div class="login">
 
-		<form class="formsheader col-md-9" method="POST" action="{{ route('login') }}">
+		<form class="formsheader" method="POST" action="{{ route('login') }}">
 
 													{{ csrf_field() }}
 
@@ -24,12 +24,14 @@
 				<span class="help-block"><strong>{{ $errors->first('password') }}</strong></span>
 				@endif
 		</div>
-		<div class="checkbox text-center">
-			<label class="linksvarios"><input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordarme</label>
-		</div>
-		<button type="submit" class="btn btn-primary">Ingresar!</button>
-		<div class="row col-md-9 col-md-offset-2">
-			<a class="linksvarios" href="{{ route('password.request') }}">¿Olvidaste tu contraseña?</a>
+		<div class="form-footer text-right">
+			<div class="checkbox ">
+				<label class="linksvarios"><input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordarme</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Ingresar!</button>
+			<div class="row col-md-9 col-md-offset-2">
+				<a class="linksvarios" href="{{ route('password.request') }}">¿Olvidaste tu contraseña?</a>
+			</div>
 		</div>
 	</form>
 </div>

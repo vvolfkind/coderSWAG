@@ -9,14 +9,15 @@
 					<h3>Diseñamos pensando en vos.</h3>
 					<p>Somos el e-commerce mas grande de remeras, stickers, tazas, posters y pins de la mas alta calidad de unix, linux, programación y software.</p>
 					<p>Tenemos diseños para todos los gustos, y si tenes alguna idea la tomamos y en base a la respuesta de la gente, lo hacemos!</p>
-					<br>
-					<p>Y estos son nuestros...</p>
-					<h2>TESTIMONIOS CODER</h2>
 				</div>
 			
 			
 				<div class="col-sm-12 testimonials">
 					<div class="row">
+						<div class="col-sm-12 description text-center">
+							<p>Y estos son nuestros...</p>
+							<h2>TESTIMONIOS CODER</h2>
+						</div>
 						<article class="col-md-4 text-center">
 							<img class="imgtestimonio img-circle" src="customers/cani8.jpg">
 							<h4><i><q>FLAMA... Hiper FLAMA</q></i></h4>

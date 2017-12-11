@@ -27,10 +27,12 @@
 		<div class="row">
 				<!-- Header -->
 			<header class="header" id="top">
-				<div class="banner text col-sm-offset-2">
+				<div class="banner text col-md-offset-2 col-md-4">
 					<a href="/index"><img data-tilt class="mainlogo img-responsive" src="img/logo.png"></a>
-					@yield("forms")
 				</div>
+			<section class="login-form col-md-offset-1 col-md-4">
+				@yield("forms")
+			</section>
 			</header>
 			<!-- Navigation -->
 			<!--a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">

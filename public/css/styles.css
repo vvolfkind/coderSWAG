@@ -191,14 +191,10 @@ hr.small {
 	margin-top: 20px;*/
 }
 .mainlogo {
-	padding-top: 20%;
-
+	padding-top: 60%;
 }
-
 .formsheader{
-	padding-top: 50%;
-	display: block;
-	right: 50%;
+	padding-top: 70%;
 }
 
 /* About */
@@ -259,8 +255,7 @@ background: url(../img/bg2.jpg) no-repeat center center scroll;
 
 footer {
 	background-color:#238c8a;
-	position: relative;
-	margin-top: 50px;	
+	position: relative;	
 	overflow: 	hidden;	
 }
 
@@ -371,31 +366,32 @@ footer a {
 	position: absolute;
 	justify-content: center;
 }
-
-/*@media (max-width:768px){
-
-	.testimonials{
-		margin-left: 10px;
+.description {
+	margin-bottom: 50px;
+}
+.testimonials h4{
+	margin-bottom: 50px;
 	}
-
-}*/
 
 
 @media (max-width:992px){
+		.mainlogo,
+	.formsheader {
+	padding-top: 10%;
+}
+	.imgtestimonio {
+		width: 250px;
+	}
+	footer {
+		height: 210px;
+	}
+	footer .social {
+		padding-top: 30px;
+		text-align: center;
+	}
 
-		.imgtestimonio {
-    		width: 250px;
-		}
-		footer {
-			height: 210px;
-		}
-		footer .social {
-			padding-top: 30px;
-			text-align: center;
-		}
-
-		footer .mailto {
-    		padding-top: 20px;
-			text-align: center;
-		}
+	footer .mailto {
+		padding-top: 20px;
+		text-align: center;
+	}
 }
