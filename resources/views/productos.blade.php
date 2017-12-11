@@ -10,7 +10,9 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="text-center">
-						<h2 class="pro"><strong>NUESTRO SWAG!</strong></h2>
+						<div class="gallerylogo text-center">
+							<img data-tilt src="logos/nuestroswag.png">
+						</div>
 						<div class="spacer"></div>
 
 						<div class="row">

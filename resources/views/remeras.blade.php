@@ -8,7 +8,9 @@
 	<div class="spacer"></div>
 	<div class="spacer"></div>
 	<div class="spacer"></div>
-	<h2 class="text-center"><strong>NUESTRAS REMERAS</strong></h2>
+	<div class="gallerylogo text-center">
+		<img data-tilt src="logos/remerashead.png">
+	</div>
 
 	<div class="productsgrid">
 		<article class="article-prod">

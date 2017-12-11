@@ -5,6 +5,12 @@
 			display: none;
 		}
 	</style>
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+	<div class="gallerylogo text-center">
+		<img data-tilt src="logos/cosashead.png">
+	</div>
 	<div class="productsgrid">
 		<article class="">
 			<img src="catalog/archmug.png">

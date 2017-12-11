@@ -8,7 +8,9 @@
 	<div class="spacer"></div>
 	<div class="spacer"></div>
 	<div class="spacer"></div>
-	<h2 class="text-center"><strong>NUESTROS BUZOS</strong></h2>
+	<div class="gallerylogo text-center">
+		<img data-tilt src="logos/buzoshead.png">
+	</div>
 	<div class="productsgrid">
 		<article class="">
 			<img class="shirtsize" src="catalog/reacthoodie.png">
