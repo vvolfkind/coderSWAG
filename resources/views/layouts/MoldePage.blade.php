@@ -23,6 +23,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 		<!-- Navigation -->
 		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
 			<i class="fa fa-bars"></i>
@@ -62,36 +63,72 @@
 					<div>
 						@yield("forms")
 					</div>
+=======
+	<div class="container-fluid">
+		<div class="row">
+				<!-- Header -->
+			<header class="header" id="top">
+				<div class="banner text col-sm-offset-2">
+					<a href="/index"><img data-tilt class="mainlogo img-responsive" src="img/logo.png"></a>
+					@yield("forms")
+>>>>>>> front-end
 				</div>
-			</div>
-		</header>
-
-		
-
-		<section class="container">
-		@yield("contenido")
-		</section>
-		<footer style="justify-content: center;">
-			<div class="row">
+			</header>
+			<!-- Navigation -->
+			<!--a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+				<i class="fa fa-bars"></i>
+			</a>
+			<!--nav id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+					<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+						<i class="fa fa-times"></i>
+					</a>
+					<li class="sidebar-brand">
+						<a class="js-scroll-trigger" href="index"><img src="img/logo.png"></a>
+					</li>
+					<div class="spacer"></div>
+					<li>
+						<a class="js-scroll-trigger" href="#about">SOBRE NOSOTROS</a>
+					</li>
+					<li>
+						<a class="js-scroll-trigger" href="{{route('register')}}">REGISTRARME</a>
+					</li>
+					<li>
+						<a class="js-scroll-trigger" href="{{ route('login') }}">INICIAR SESION</a>
+					</li>
+					<li>
+						<a class="js-scroll-trigger" href="/productos"
+						 onclick=$( "#menu-close").click();>PRODUCTOS</a>
+					</li>
+				</ul>
+			</nav-->
+			
+			<section class="section-container col-md-12">
+				@yield("contenido")
+			</section>
+			<footer class="footer col-md-12">
 				<img class="footerback" src="img/footerlogos.png">
-				<section class="col-md-6">
-					<a href="mailto:info@codersswag.com"><i class="fa fa-envelope-o fa-fw"></i>info@codersswag.com</a>
-				</section>
-				<section class="col-md-6">
-					<ul class="">
-						<li class="">
-							<a href="https://www.facebook.com"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-						</li>
-						<li class="">
-							<a href="https://www.twitter.com"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-						</li>
-						<li class="">
-							<a href="https://www.instagram.com"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</footer>
+				<div class="row footer-icons">
+					<section class="col-md-6 mailto">
+						<a href="mailto:info@codersswag.com"><i class="fa fa-envelope-o fa-fw"></i>info@codersswag.com</a>
+					</section>
+					<section class="col-md-6 text-right social">
+						<ul class="">
+							<li class="">
+								<a href="https://www.facebook.com"><i class="fa fa-facebook fa-fw fa-5x"></i></a>
+							</li>
+							<li class="">
+								<a href="https://www.twitter.com"><i class="fa fa-twitter fa-fw fa-5x"></i></a>
+							</li>
+							<li class="">
+								<a href="https://www.instagram.com"><i class="fa fa-instagram fa-fw fa-5x"></i></a>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</footer>
+		</div>
+	</div>
 
 		<!-- Bootstrap core JavaScript -->
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
