@@ -86,6 +86,7 @@ hr.small {
 	position: fixed;
 	z-index: 1000;
 	right: 0;
+	top:0;
 	overflow-y: auto;
 	width: 250px;
 	height: 100%;
@@ -105,6 +106,9 @@ hr.small {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+.sidebar-nav #menu-close {
+	float: left !important;
 }
 .sidebar-nav ul {
 	margin-top: 80px;
