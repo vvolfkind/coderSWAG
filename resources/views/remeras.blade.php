@@ -13,103 +13,21 @@
 	</div>
 
 	<div class="productsgrid">
-		<article class="article-prod">
-			<img class="shirtsize" src="catalog/html5black.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="article-prod">
-			<img class="shirtsize" src="catalog/html5green.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="article-prod">
-			<img class="shirtsize" src="catalog/html5blue.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="article-prod">
-			<img class="shirtsize" src="catalog/reactblack.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="article-prod">
-			<img class="shirtsize" src="catalog/reactgreen.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="article-prod">
-			<img class="shirtsize" src="catalog/reactblue.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="article-prod">
-			<img class="shirtsize" src="catalog/html5blue.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="article-prod">
-			<img class="shirtsize" src="catalog/reactblack.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
+	@foreach ($remeras as $remera)
+		<hr>
+			<article class="products">
+				<div class="row">
+					<div>
+						<img src="/storage/{{$remera->fotopath}}">
+						<h3>$350</h3>
+						<button type="button" class="btn btn-info">COMPRAR</button>
+					</div>
+				</div>
+			</article>
+	@endforeach
 	</div>
+
+
 	<div class="spacer"></div>
 	<div class="spacer"></div>
 	<div class="text text-center"><a href="productos">VOLVER</a></div>

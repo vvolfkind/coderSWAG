@@ -15,34 +15,20 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/home', function () {
-    return view('welcome');
-});
-
 Route::get('/index', "RutaController@mostrar");
-
 Route::get('/productos', "ProductosController@mostrar");
-
 Route::get('/buzos', "ProductosController@mostrarBuzos");
-
 Route::get('/remeras','ProductosController@mostrarRemeras');
-
 Route::get('/misc','ProductosController@mostrarMisc');
-
-Route::get('/hbo', 'ProductosController@hboShop');
-
-Route::get('/subir', 'RutaController@subir');
-
 Route::post('/productos', "ProductosController@store");
-Route::get('/productos/{id}','ProductosController@traer');
 
-//Route::get("/index", "HomeController@index");//
+//ADMIN
+Route::get('/adminpanel', 'RutaController@adminPanel')->name('adminpanel');
+Route::get('/subir', 'RutaController@subir');
 Route::post('/subir', 'ProductosController@store');
+
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
-
 Route::get('todosProductos', "ProductosController@todos");
 
 

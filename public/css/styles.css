@@ -180,7 +180,6 @@ hr.small {
 	padding: 15px 20px;
 }
 
-
 /* Header */
 
 .header {
@@ -211,9 +210,6 @@ hr.small {
 	width: 100vw;
 }
 
-h3{
-	color:#CEDBD4;
-}
 
 .pp{
 	font-size: 50px;
@@ -323,44 +319,33 @@ footer a {
 /* GRILLA DE PRODUCTOS */
 
 .productsgrid {
-	height: 100vh;
-	margin-top: 10vh;
-	margin-left: 10vw;
-	margin-bottom: 10vh;
-	display: grid;
-	grid-row-gap: 6px;
-	grid-gap: 90px;
-	grid-auto-flow: row;
-	grid-template-columns: repeat(auto-fit, 150px);
-	height: 100vh;
+	margin-top: 150px;
+	display: flex;
+	width: 992px;
+	flex-wrap: wrap;
 }
 
-.article-prod {
-	justify-content: center;
-	align-content: center;
-	padding: 40px;
+.products {
+	width: 768px;
+	margin-left: 150px;
+	display: inline-flex;
 }
 
-.buybtn {
-	display: inline-block;
-	height: 25px;
-	width: 70px;
-	background-color: #f4cb42;
-	border-radius: 3px;
-	box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+.products img {
+	max-width: 300px;
+	margin: 25px;
+}
+.products button {
+	text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-.buybtn a {
-	font-family: 'Barlow', bold;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-	overflow: hidden;
-	font-size: 22px;
-	text-decoration-style: none;
+.products h3 {
+	font-family: 'Barlow', sans-serif;
+	color: rgb(0, 56, 28);
 }
-.shirtsize {
-	max-width: 220px;
-	padding: 4px;
-}
+
+/***********  ***********/
 
 .imgtestimonio {
 	width: 50%;
@@ -377,7 +362,23 @@ footer a {
 	margin-bottom: 50px;
 	}
 
+/***** PANEL ADMINISTRACION ****/
+.navadmin ul li {
+	display: inline-block;
+	padding: 5px;
+	list-style: none;
+}
+.navadmin a {
+	list-style-type: none;
+	font-size: 18px;
+}
+.navadmin img {
+	max-width: 100px;
+	display: inline-block;
+	margin-left: 25px;
+}
 
+/*** media queries */
 @media (max-width:992px){
 		.mainlogo,
 	.formsheader {

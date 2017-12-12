@@ -12,12 +12,15 @@ class ProductosController extends Controller
 	}
 
 	public function mostrarBuzos(){
-		 return view('buzos');
+		$buzos = \App\product::where('category_id', "=", 2)->get();
+		return view('buzos', compact('buzos'));
 	}
 
 	public function mostrarRemeras(){
-		return view('remeras');
+		$remeras = \App\product::where('category_id', "=", 1)->get();
+		return view('remeras', compact('remeras'));
 	}
+
 
 	public function  mostrarMisc(){
 		return view('misc');
@@ -61,15 +64,7 @@ class ProductosController extends Controller
 		$product->category()->associate($category);
 		$product->save();
 
-		return redirect('/productos');
-	}
-
-	public function traer($id) {
-		
-		$products = \App\product::where('category_id', "=", $id)->get();
-		
-		$VAC= compact('products');
-		return view('buzos')->with($VAC);
+		return redirect('/subir');
 	}
 
 	public function todos(){

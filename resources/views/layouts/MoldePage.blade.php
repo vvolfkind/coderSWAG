@@ -35,34 +35,57 @@
 			</section>
 			</header>
 			<!-- Navigation -->
-			<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
-				<i class="fa fa-bars"></i>
-			</a>
-			<nav id="sidebar-wrapper">
-				<ul class="sidebar-nav">
-					<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
-						<i class="fa fa-times"></i>
-					</a>
-					<li class="sidebar-brand">
-						<a class="js-scroll-trigger" href="index"><img src="img/logo.png"></a>
-					</li>
-					<div class="spacer"></div>
-					<li>
-						<a class="js-scroll-trigger" href="/#about">SOBRE NOSOTROS</a>
-					</li>
-					<li>
-						<a class="js-scroll-trigger" href="{{route('register')}}">REGISTRARME</a>
-					</li>
-					<li>
-						<a class="js-scroll-trigger" href="{{ route('login') }}">INICIAR SESION</a>
-					</li>
-					<li>
-						<a class="js-scroll-trigger" href="/productos"
-						 onclick=$( "#menu-close").click();>PRODUCTOS</a>
-					</li>
-				</ul>
-			</nav>
-			
+		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+			<i class="fa fa-bars"></i>
+		</a>
+		<nav id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+					<i class="fa fa-times"></i>
+				</a>
+				<li class="sidebar-brand">
+					<a class="js-scroll-trigger" href="index"><img src="img/logo.png"></a>
+				</li>
+				<div class="spacer"></div>
+				
+	@if (auth()->check())
+
+				<li>
+					<a class="js-scroll-trigger" href="#">HOME</a>
+				</li>
+				<li>
+					<a href="{{ route('logout')}}"
+					onclick="event.preventDefault();
+				document.getElementById('logout-form').submit();">LOGOUT</a>
+						<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+		{{ csrf_field() }}
+						</form>
+				</li>
+				<li>
+					<a class="js-scroll-trigger" href="/productos"
+					 onclick=$( "#menu-close").click();>PRODUCTOS</a>
+				</li>
+				@if (auth()->user()->is_admin == 1)
+				<li>
+					<a href="{{route('adminpanel')}}">PANEL DE ADMINISTRACION</a>
+				</li>
+				@endif
+	@else
+				<li>
+					<a class="js-scroll-trigger" href="/productos"
+					 onclick=$( "#menu-close").click();>PRODUCTOS</a>
+				</li>
+				<li>
+					<a class="js-scroll-trigger" href="{{route('register')}}">REGISTRARME</a>
+				</li>
+				<li>
+					<a class="js-scroll-trigger" href="{{ route('login') }}">INICIAR SESION</a>
+				</li>
+				
+	@endif
+			</ul>
+		</nav>
+
 			<section class="section-container col-md-12">
 				@yield("contenido")
 			</section>

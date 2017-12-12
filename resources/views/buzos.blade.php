@@ -12,107 +12,24 @@
 		<img data-tilt src="logos/buzoshead.png">
 	</div>
 	<div class="productsgrid">
-		<article class="">
-			<img class="shirtsize" src="catalog/reacthoodie.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="">
-			<img class="shirtsize" src="catalog/angularhoodie.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="">
-			<img class="shirtsize" src="catalog/angularhoodie.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="">
-			<img class="shirtsize" src="catalog/laravelhoodie.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="">
-			<img class="shirtsize" src="catalog/angularhoodie.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="">
-			<img class="shirtsize" src="catalog/reacthoodie.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="">
-			<img class="shirtsize" src="catalog/laravelhoodie.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		<article class="">
-			<img class="shirtsize" src="catalog/angularhoodie.png">
-			<a href="#"><div class="buybtn text-center">Comprar!</div></a>
-			<select>
-				<option value="xs">XS</option>
-				<option value="s">S</option>
-				<option value="m">M</option>
-				<option value="l">L</option>
-				<option value="xl">XL</option>
-				<option value="xxl">XXL</option>
-			</select>
-		</article>
-		
+	@foreach ($buzos as $buzo)
+		<hr>
+			<article class="products">
+				<div class="row">
+					<div>
+						<img src="/storage/{{$buzo->fotopath}}">
+						<h3>$550</h3>
+						<button type="button" class="btn btn-info">COMPRAR</button>
+					</div>
+				</div>
+			</article>
+	@endforeach
 	</div>
+
+	<div class="spacer"></div>
+	<div class="spacer"></div>
 	<div class="text text-center"><a href="productos">VOLVER</a></div>
 	<div class="spacer"></div>
 	<div class="spacer"></div>
-
 
 @endsection

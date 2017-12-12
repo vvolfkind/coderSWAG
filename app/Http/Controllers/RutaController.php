@@ -14,4 +14,12 @@ class RutaController extends Controller
 		return view('subir');
 	}
 
+	public function adminPanel() {
+		//dd(auth()->user()->is_admin);
+		if(auth()->user()->is_admin == 1) {
+			return view('adminpanel');
+		} else {
+			return view('index'); 
+		}
+	}
 }

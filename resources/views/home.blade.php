@@ -1,128 +1,133 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
  <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        
-        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
-        <title>Coder's SWAG!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+		<title>Coder's SWAG!</title>
 
-        <!-- Bootstrap Core CSS -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Bootstrap Core CSS -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Custom Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Custom Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <!-- Custom CSS -->
-        <link href="css/styles.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-        <!-- Navigation -->
-        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
-            <i class="fa fa-bars"></i>
-        </a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
-                    <i class="fa fa-times"></i>
-                </a>
-                <li class="sidebar-brand">
-                    <a class="js-scroll-trigger" href="index"><img src="img/logo.png"></a>
-                </li>
-                <div class="spacer"></div>
-                <li>
-                    <a class="js-scroll-trigger" href="#about">SOBRE NOSOTROS</a>
-                </li>
-                <li>
-                    <a class="js-scroll-trigger" href="{{route('register')}}">REGISTRARME</a>
-                </li>
-                <li>
-                    <a class="js-scroll-trigger" href="{{ route('login') }}">INICIAR SESION</a>
-                </li>
-                <li>
-                    <a class="js-scroll-trigger" href="/productos"
-                     onclick=$( "#menu-close").click();>PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();">
-               LOGOUT
-                </a>
+		<!-- Navigation -->
+		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+			<i class="fa fa-bars"></i>
+		</a>
+		<nav id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+					<i class="fa fa-times"></i>
+				</a>
+				<li class="sidebar-brand">
+					<a class="js-scroll-trigger" href="index"><img src="img/logo.png"></a>
+				</li>
+				<div class="spacer"></div>
+				
+	@if (auth()->check())
 
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            {{ csrf_field() }}
-            </form>
-                </li>
-                </li>
-            </ul>
-        </nav>
-         <section class="log" style="height: 100vh">
-                            <div class="banner text text-center">
-                    <div>
-                        <a href="index"><img data-tilt class="mainlogo" src="img/logo.png"></a>
-                    </div>
-                    <div>
-              <div class="container">
-    <div class="row">
-                <div class="panel-body ll">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+				<li>
+					<a class="js-scroll-trigger" href="#">HOME</a>
+				</li>
+				<li>
+					<a href="{{ route('logout')}}"
+					onclick="event.preventDefault();
+				document.getElementById('logout-form').submit();">LOGOUT</a>
+						<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+		{{ csrf_field() }}
+						</form>
+				</li>
+				<li>
+					<a class="js-scroll-trigger" href="/productos"
+					 onclick=$( "#menu-close").click();>PRODUCTOS</a>
+				</li>
+				@if (auth()->user()->is_admin == 1)
+				<li>
+					<a href="{{route('adminpanel')}}">PANEL DE ADMINISTRACION</a>
+				</li>
+				@endif
+	@else
+				<li>
+					<a class="js-scroll-trigger" href="/productos"
+					 onclick=$( "#menu-close").click();>PRODUCTOS</a>
+				</li>
+				<li>
+					<a class="js-scroll-trigger" href="{{route('register')}}">REGISTRARME</a>
+				</li>
+				<li>
+					<a class="js-scroll-trigger" href="{{ route('login') }}">INICIAR SESION</a>
+				</li>
+				
+	@endif
+			</ul>
+		</nav>
 
-                   <p class="pp">¡Bienvenidos!</p> 
-                </div>
-        </div>
-    </div>
+		<section class="log" style="height: 100vh">
+			<div class="banner text text-center">
+				<div>
+					<a href="index"><img data-tilt class="mainlogo" src="img/logo.png"></a>
+				</div>
+				<div>
+					<div class="container">
+						<div class="row">
+							<div class="panel-body ll">
+								@if (session('status'))
+									<div class="alert alert-success">
+										{{ session('status') }}
+									</div>
+								@endif
 
-         </section>
-        <!-- Header -->
+						   <p class="pp">¡Bienvenidos!</p> 
+						</div>
+				</div>
+			</div>
 
- 
+		</section>
+		<!-- Header -->
+		<footer style="justify-content: center;">
+			<div class="row">
+				<img class="footerback" src="img/footerlogos.png">
+				<section class="col-md-6">
+					<a href="mailto:info@codersswag.com"><i class="fa fa-envelope-o fa-fw"></i>info@codersswag.com</a>
+				</section>
+				<section class="col-md-6">
+					<ul class="">
+						<li class="">
+							<a href="https://www.facebook.com"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+						</li>
+						<li class="">
+							<a href="https://www.twitter.com"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+						</li>
+						<li class="">
+							<a href="https://www.instagram.com"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</footer>
 
+		<!-- Bootstrap core JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
-
-        <footer style="justify-content: center;">
-            <div class="row">
-                <img class="footerback" src="img/footerlogos.png">
-                <section class="col-md-6">
-                    <a href="mailto:info@codersswag.com"><i class="fa fa-envelope-o fa-fw"></i>info@codersswag.com</a>
-                </section>
-                <section class="col-md-6">
-                    <ul class="">
-                        <li class="">
-                            <a href="https://www.facebook.com"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li class="">
-                            <a href="https://www.twitter.com"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li class="">
-                            <a href="https://www.instagram.com"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </footer>
-
-        <!-- Bootstrap core JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- Custom scripts for this template -->
-        <script src="js/stylish-portfolio.js"></script>
-        <script type="text/javascript" scr="scroll.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- Custom scripts for this template -->
+		<script src="js/stylish-portfolio.js"></script>
+		<script type="text/javascript" scr="scroll.js"></script>
 </body>
 
 </html>
@@ -152,23 +157,23 @@
 
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-3 col-md-offset-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">CoderSwag</div>
+	<div class="row">
+		<div class="col-md-3 col-md-offset-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">CoderSwag</div>
 
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+				<div class="panel-body">
+					@if (session('status'))
+						<div class="alert alert-success">
+							{{ session('status') }}
+						</div>
+					@endif
 
-                    Bienvenida CoderSwag!
-                </div>
-            </div>
-        </div>
-    </div>
+					Bienvenida CoderSwag!
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
