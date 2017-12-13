@@ -325,23 +325,24 @@ footer a {
 
 /* GRILLA DE PRODUCTOS */
 
-.productsgrid {
+.productsgrid {/*
 	margin-top: 150px;
 	display: flex;
 	width: 992px;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 }
 
-.products {
+.products {/*
 	width: 768px;
 	margin-left: 150px;
-	display: inline-flex;
+	display: inline-flex;*/
+	margin-bottom: 150px;
 }
 
 .products img {
-	max-width: 300px;
-	margin: 25px;
+	width: 100%;
 }
+
 .products button {
 	text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
 	box-shadow: 1px 1px rgba(0, 0, 0, 0.8);
@@ -352,8 +353,24 @@ footer a {
 	color: rgb(0, 56, 28);
 }
 
-/***********  ***********/
+.productgrid {
+	
+}
+.productgrid div {
+	display: inline-block;
+}
 
+.buzos{
+	width: 500px;
+}
+/***********  ***********/
+.precio{
+font-size: 60px;
+}
+
+.bt{
+	font-size:30px;
+}
 .imgtestimonio {
 	width: 50%;
 }
@@ -390,12 +407,10 @@ footer a {
 		.mainlogo,
 	.formsheader {
 	padding-top: 10%;
-}
+	}
 	.register .formsheader {
 		padding-top: 5%;
 	}
-
-
 	.imgtestimonio {
 		width: 250px;
 	}
@@ -410,5 +425,11 @@ footer a {
 	footer .mailto {
 		padding-top: 20px;
 		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.gallerylogo img {
+		width: 100%;
 	}
 }
