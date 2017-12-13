@@ -18,7 +18,7 @@
 		@foreach ($miscs as $misc)
 		<article class="products text-center col-md-4">
 			<img src="/storage/{{$misc->fotopath}}">
-			<h3 >$120</h3>
+			<h3>${{$misc->cost}}</h3>
 			<button type="button" class="btn btn-info">COMPRAR</button>
 		</article>
 		@endforeach
