@@ -325,17 +325,10 @@ footer a {
 
 /* GRILLA DE PRODUCTOS */
 
-.productsgrid {/*
-	margin-top: 150px;
-	display: flex;
-	width: 992px;
-	flex-wrap: wrap;*/
+.productsgrid {
 }
 
-.products {/*
-	width: 768px;
-	margin-left: 150px;
-	display: inline-flex;*/
+.products {
 	margin-bottom: 150px;
 }
 
@@ -400,6 +393,18 @@ font-size: 60px;
 	max-width: 100px;
 	display: inline-block;
 	margin-left: 25px;
+}
+
+.usergrid {
+	display: grid;
+	width: 90%;
+	margin-left: 200px;
+}
+.usergrid a {
+	font-size: 18px;
+}
+.usergrid h4 {
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 /*** media queries */

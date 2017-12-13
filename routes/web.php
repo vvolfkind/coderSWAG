@@ -26,6 +26,10 @@ Route::post('/productos', "ProductosController@store");
 Route::get('/adminpanel', 'RutaController@adminPanel')->name('adminpanel');
 Route::get('/subir', 'RutaController@subir');
 Route::post('/subir', 'ProductosController@store');
+Route::get('/users', 'RutaController@indexUsers');
+Route::get('/indexproductos', 'ProductosController@indexProductos');
+Route::get('/indexproductos/{id}/edit', 'ProductosController@edit');
+Route::patch('/indexproductos/{id}', 'ProductosController@update');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

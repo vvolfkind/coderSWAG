@@ -7,7 +7,7 @@
 <div class="spacer"></div>
 
 
-<div class="col-md-offset-6">
+<div class="col-md-8 col-md-offset-2">
 
 <form action="/productos" method="post" enctype="multipart/form-data">
 
@@ -33,7 +33,7 @@
 									<li>{{ $error }}</li>
 								@endforeach
 								</ul>
-							</div>	
+							</div>
 				@endif
 
 				<div class="spacer"></div>

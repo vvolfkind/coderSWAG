@@ -67,9 +67,39 @@ class ProductosController extends Controller
 		return redirect('/subir');
 	}
 
-	public function todos(){
-		$products = \App\product::all();
-		return view('buzos',compact('products'));
+	public function indexProductos(){
+		$productos = \App\product::all();
+		return view('indexproductos',compact('productos'));
+	}
+	
+
+
+
+	public function edit($id) {
+		$product = \App\Product::find($id);
+		$categories = \App\Categorie::all();
+		$properties = \App\Propertie::all();
+
+		$variables = [
+			'product' => $product,
+			'categories' => $categories,
+			'properties' => $properties,
+		];
+
+		return view('edit', $variables);
+	}
+	public function update(Request $request, $id){
+		$product = \App\Product::find($id);
+		$category = \App\Categorie::find($request->input('category_id'));
+
+		$product->name = $request->input('name');
+		$product->cost = $request->input('cost');
+		$product->category()->associate($category);
+		$product->save();
+
+		$product->properties()->sync($request->input('properties'));
+
+		return redirect('indexproductos');
 	}
 
 }

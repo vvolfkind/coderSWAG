@@ -29,7 +29,8 @@
 						<ul>
 							<li><a href="index"><img class="img-responsive" src="img/logo.png"></a></li>
 							<li><a href="subir">SUBIR PRODUCTOS</a></li>
-							<li><a href="#">CONTROL USUARIOS</a></li>
+							<li><a href="indexproductos">EDITAR PRODUCTOS</a></li>
+							<li><a href="users">CONTROL USUARIOS</a></li>
 							<li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</a>
 							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 							{{ csrf_field() }}
@@ -42,8 +43,9 @@
 				</div>
 			</nav>
 		</div>
-		<div class="adminpanels col-md-8">
+		<div class="adminpanels">
 		@yield('sectionadmin')
+		@yield('editsection')
 		</div>
 	</main>
 </body>

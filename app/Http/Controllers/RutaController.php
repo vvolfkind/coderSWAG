@@ -23,4 +23,8 @@ class RutaController extends Controller
 			return view('index'); 
 		}
 	}
+	public function indexUsers(){
+		$users = \App\User::where('is_admin', "=", 0)->get();
+		return view('users', compact('users'));
+	}
 }

@@ -60,7 +60,7 @@
 	@if (auth()->check())
 
 				<li>
-					<a class="js-scroll-trigger" href="{{ route('index') }}">HOME</a>
+					<a class="js-scroll-trigger" href="index">HOME</a>
 				</li>
 				<li>
 					<a href="{{ route('logout')}}"
