@@ -12,20 +12,15 @@
 		<img data-tilt src="logos/remerashead.png">
 	</div>
 
-	<div class="productsgrid">
-	@foreach ($remeras as $remera)
-		<hr>
-			<article class="products">
-				<div class="row">
-					<div>
-						<img src="/storage/{{$remera->fotopath}}">
-						<h3>$350</h3>
-						<button type="button" class="btn btn-info">COMPRAR</button>
-					</div>
-				</div>
+	<div class="productsgrid row">
+			@foreach ($buzos as $buzo)
+			<article class="products text-center col-md-4">
+				<img src="/storage/{{$buzo->fotopath}}">
+				<h3 >$350</h3>
+				<button type="button" class="btn btn-info">COMPRAR</button>
 			</article>
-	@endforeach
-	</div>
+			@endforeach
+		</div>
 
 
 	<div class="spacer"></div>

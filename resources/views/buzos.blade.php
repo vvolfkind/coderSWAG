@@ -22,31 +22,11 @@
 		</article>
 		@endforeach
 	</div>
-<!--
-	<div class="productsgrid">
-	@foreach ($buzos as $buzo)
-		<hr>
-			<article class="products row">
-				<div>
-						<img src="/storage/{{$buzo->fotopath}} class="buzos">
-				</div>
-
-				<div>
-						<h3>$550</h3>
-				</div>
-
-				<div>
-						<button type="button" class="btn btn-info">COMPRAR</button>
-					</div>
-			</article>
-	@endforeach
-	</div>
 
 	<div class="spacer"></div>
 	<div class="spacer"></div>
 	<div class="text text-center"><a href="productos">VOLVER</a></div>
 	<div class="spacer"></div>
 	<div class="spacer"></div>
--->
 @endsection
 
