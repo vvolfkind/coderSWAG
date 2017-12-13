@@ -7,7 +7,7 @@
 			 }
 		</style>
 
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row text-center">
 					<div class="text-center">
 						<div class="gallerylogo text-center">
@@ -40,13 +40,9 @@
 						<div class="spacer"></div>
 						<a href="index" style="font-size: 20px;">VOLVER</a>
 					</div>
-					<!-- /.col-lg-10 -->
 				</div>
-				<!-- /.row -->
 			</div>
-			<!-- /.container -->
 		</section>
-
 
 			<div class="spacer"></div>
 

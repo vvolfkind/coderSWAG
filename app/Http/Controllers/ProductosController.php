@@ -11,19 +11,20 @@ class ProductosController extends Controller
 		return view('productos');
 	}
 
+		public function mostrarRemeras(){
+		$remeras = \App\product::where('category_id', "=", 1)->get();
+		return view('remeras', compact('remeras'));
+	}
+
 	public function mostrarBuzos(){
 		$buzos = \App\product::where('category_id', "=", 2)->get();
 		return view('buzos', compact('buzos'));
 	}
 
-	public function mostrarRemeras(){
-		$remeras = \App\product::where('category_id', "=", 1)->get();
-		return view('remeras', compact('remeras'));
-	}
-
 
 	public function  mostrarMisc(){
-		return view('misc');
+		$misc = \App\product::where('category_id', "=", 3)->get();
+		return view('misc', compact('misc'));
 	}
 
 	public function store(Request $request) {
