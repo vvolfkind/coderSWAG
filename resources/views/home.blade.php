@@ -22,7 +22,28 @@
 </head>
 
 <body>
-		<!-- Navigation -->
+		<div clas="container-fluid">
+			<div class="row">
+				<!-- Header -->
+			<header class="header" id="top">
+				<div class="banner text col-md-offset-2 col-md-4">
+					<a href="/index"><img data-tilt class="mainlogo img-responsive" src="img/logo.png"></a>
+				</div>
+			<section >
+				<div class="col-sm-12 text-center">
+								@if (session('status'))
+									<div class="alert alert-success">
+										{{ session('status') }}
+									</div>
+								@endif
+
+						   <p class="pp">¡Bienvenidos!</p> 
+						   <p class="text-center"><a href="/productos" class="link">!EMPEZA A COMPRAR!</a></p>
+
+						</div>
+			</section>
+			</header>
+			<!-- Navigation -->
 		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
 			<i class="fa fa-bars"></i>
 		</a>
@@ -74,49 +95,29 @@
 			</ul>
 		</nav>
 
-		<section class="log" style="height: 100vh">
-			<div class="banner text text-center">
-				<div>
-					<a href="index"><img data-tilt class="mainlogo" src="img/logo.png"></a>
-				</div>
-				<div>
-					<div class="container">
-						<div class="row">
-							<div class="panel-body ll">
-								@if (session('status'))
-									<div class="alert alert-success">
-										{{ session('status') }}
-									</div>
-								@endif
-
-						   <p class="pp">¡Bienvenidos!</p> 
-						</div>
-				</div>
-			</div>
-
-		</section>
-		<!-- Header -->
-		<footer style="justify-content: center;">
-			<div class="row">
+		<footer class="footer col-md-12">
 				<img class="footerback" src="img/footerlogos.png">
-				<section class="col-md-6">
-					<a href="mailto:info@codersswag.com"><i class="fa fa-envelope-o fa-fw"></i>info@codersswag.com</a>
-				</section>
-				<section class="col-md-6">
-					<ul class="">
-						<li class="">
-							<a href="https://www.facebook.com"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-						</li>
-						<li class="">
-							<a href="https://www.twitter.com"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-						</li>
-						<li class="">
-							<a href="https://www.instagram.com"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</footer>
+				<div class="row footer-icons">
+					<section class="col-md-6 mailto">
+						<a href="mailto:info@codersswag.com"><i class="fa fa-envelope-o fa-fw"></i>info@codersswag.com</a>
+					</section>
+					<section class="col-md-6 text-right social">
+						<ul class="">
+							<li class="">
+								<a href="https://www.facebook.com"><i class="fa fa-facebook fa-fw fa-5x"></i></a>
+							</li>
+							<li class="">
+								<a href="https://www.twitter.com"><i class="fa fa-twitter fa-fw fa-5x"></i></a>
+							</li>
+							<li class="">
+								<a href="https://www.instagram.com"><i class="fa fa-instagram fa-fw fa-5x"></i></a>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</footer>
+	</div>
+	</div>
 
 		<!-- Bootstrap core JavaScript -->
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -133,48 +134,6 @@
 </html>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-3 col-md-offset-6">
-			<div class="panel panel-default">
-				<div class="panel-heading">CoderSwag</div>
-
-				<div class="panel-body">
-					@if (session('status'))
-						<div class="alert alert-success">
-							{{ session('status') }}
-						</div>
-					@endif
-
-					Bienvenida CoderSwag!
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
 
 

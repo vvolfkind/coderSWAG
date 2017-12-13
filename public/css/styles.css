@@ -251,6 +251,9 @@ background: url(../img/bg2.jpg) no-repeat center center scroll;
 	opacity: .8;
 }
 
+.link{
+	color:white;
+}
 /* Footer */
 
 footer {

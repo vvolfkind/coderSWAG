@@ -89,6 +89,7 @@
 			<section class="section-container col-md-12">
 				@yield("contenido")
 			</section>
+			
 			<footer class="footer col-md-12">
 				<img class="footerback" src="img/footerlogos.png">
 				<div class="row footer-icons">
