@@ -58,7 +58,6 @@ class ProductosController extends Controller
 		]);
 
 
-
 		$category = \App\categorie::find($request->input('category_id'));
 
 		$product->properties()->sync($request->input('properties'));

@@ -17,21 +17,21 @@
 
 						<div class="row">
 							<div class="col-xs-4">
-								<div class="">
+								<div >
 									<h4><strong>Remeras</strong></h4>
-									<a href="remeras"><img class ="shirtsize" src="catalog/reactblue.png"></a>
+									<a href="remeras"><img class ="productos" src="catalog/reactblue.png" ></a>
 								</div>
 							</div>
 							<div class="col-xs-4">
 								<div class="">
 									<h4><strong>Buzos</strong></h4>
-									<a href="buzos"><img class="shirtsize" src="catalog/angularhoodie.png"></a>
+									<a href="buzos"><img class="productos" src="catalog/angularhoodie.png"></a>
 								</div>
 							</div>
 							<div class="col-xs-4">
 								<div class="">
 									<h4><strong>Misceláneos</strong></h4>
-									<a href="misc"><img src="catalog/archmug.png"></a>
+									<a href="misc"><img class="productos" src="catalog/archmug.png"></a>
 								</div>
 							</div>
 						</div>
