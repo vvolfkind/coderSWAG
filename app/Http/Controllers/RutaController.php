@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class RutaController extends Controller
 {
@@ -16,7 +17,7 @@ class RutaController extends Controller
 
 	public function adminPanel() {
 		//dd(auth()->user()->is_admin);
-		if(auth()->user()->is_admin == 1) {
+		if(Auth::check() && Auth::user()->is_admin == 1) {
 			return view('adminpanel');
 		} else {
 			return view('index'); 
