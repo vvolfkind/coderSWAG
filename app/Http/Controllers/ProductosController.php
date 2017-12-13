@@ -23,8 +23,8 @@ class ProductosController extends Controller
 
 
 	public function  mostrarMisc(){
-		$misc = \App\product::where('category_id', "=", 3)->get();
-		return view('misc', compact('misc'));
+		$miscs = \App\product::where('category_id', "=", 3)->get();
+		return view('misc', compact('miscs'));
 	}
 
 	public function store(Request $request) {
