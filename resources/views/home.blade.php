@@ -37,8 +37,12 @@
 									</div>
 								@endif
 
-						   <p class="pp">¡Bienvenidos!</p> 
-						   <p class="text-center"><a href="/productos" class="link">!EMPEZA A COMPRAR!</a></p>
+							<p class="pp">¡Bienvenido!</p> 
+							@if (auth()->user()->is_admin == 1)
+							<p><a style="color: white;"href="{{route('adminpanel')}}">PANEL DE ADMINISTRACION</a></p>
+							@else
+							<p class="text-center"><a href="/productos" class="link">!EMPEZA A COMPRAR!</a></p>
+							@endif
 
 						</div>
 			</section>

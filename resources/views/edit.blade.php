@@ -1,9 +1,9 @@
 @extends("adminpanel")
 @section('editsection')
-<div style="margin-top: 200px;" class=""></div>
+<div style="margin-top: 100px; margin-left: 100px;" class=""></div>
 
 <div class="">
-		<form class="col-md-5" action="/indexproductos" method="post">
+		<form class="col-md-5" action="/indexproductos/{{$product->id}}" method="post">
 			<h3>Editando: {{$product->name}}</h3>
 			{{ csrf_field() }}
 			{{ method_field('patch') }}
@@ -47,8 +47,14 @@
 				</select>
 			</div>
 			<div class="form-group">
-				<button type="submit" name="button" class="btn btn-primary">Enviar</button>
+				<button type="submit" name="button" class="btn btn-primary">Editar</button>
 			</div>
+		</form>
+		<form class="" action="/indexproductos/{{$product->id}}" method="post">
+			{{ csrf_field() }}
+			{{ method_field('delete') }}
+			<input type="hidden" name="cost" id="cost" value="{{$product->id}}" class="form-control">
+			<button type="submit" class="btn btn-danger">Borrar Producto</button>
 		</form>
 	</div>
 @endsection

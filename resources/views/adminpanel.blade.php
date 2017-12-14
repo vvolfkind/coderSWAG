@@ -18,7 +18,7 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 		<!-- Custom CSS -->
-		<link href="css/styles.css" rel="stylesheet">
+		<link href="/css/styles.css" rel="stylesheet">
 </head>
 <body>
 	<main class="fluid-container">
@@ -27,7 +27,7 @@
 				<div class="row">
 					<div class="collapse navbar-collapse">
 						<ul>
-							<li><a href="index"><img class="img-responsive" src="img/logo.png"></a></li>
+							<li><a href="/index"><img class="img-responsive" src="/img/logo.png"></a></li>
 							<li><a href="subir">SUBIR PRODUCTOS</a></li>
 							<li><a href="indexproductos">EDITAR PRODUCTOS</a></li>
 							<li><a href="users">CONTROL USUARIOS</a></li>

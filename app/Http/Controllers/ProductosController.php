@@ -102,4 +102,12 @@ class ProductosController extends Controller
 		return redirect('indexproductos');
 	}
 
+	public function destroy($id) {
+		$product = \App\Product::find($id);
+
+		$product->delete();
+
+		return redirect('indexproductos');
+	}
+
 }

@@ -27,4 +27,30 @@ class RutaController extends Controller
 		$users = \App\User::where('is_admin', "=", 0)->get();
 		return view('users', compact('users'));
 	}
+
+	public function edit($email) {
+		$user = \App\User::where('email', $email)->first();
+
+		return view('edituser', compact('user'));
+	}
+
+	public function update(Request $request, $email){
+		$user = \App\User::where('email', $email)->first();
+
+		$user->name = $request->input('name');
+		$user->email = $request->input('email');
+
+		
+
+		$user->save();
+
+		return redirect('users');
+	}
+	public function destroy($email) {
+		$user = \App\User::where('email', $email)->first();
+
+		$user->delete();
+
+		return redirect('users');
+	}
 }

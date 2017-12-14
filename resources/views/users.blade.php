@@ -41,7 +41,7 @@
 			<div class="col-md-4">
 				<ul>
 					<li>
-						<a href="#"> {{$user->email}}</a>
+						<a href="users/{{$user->email}}/edituser"> {{$user->email}}</a>
 					</li>
 				</ul>
 			</div>
