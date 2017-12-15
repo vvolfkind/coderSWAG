@@ -32,6 +32,7 @@
 						<div class="spacer"></div>
 						<div class="spacer"></div>
 						<div class="spacer"></div>
+						
 						<a href="index" style="font-size: 20px;">VOLVER</a>
 					</div>
 				</div>
