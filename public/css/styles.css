@@ -324,12 +324,15 @@ footer a {
 }
 
 /* GRILLA DE PRODUCTOS */
+.gallerylogo {
+	margin-bottom: 100px;
+}
 
 .productsgrid {
 }
 
 .products {
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 
 .products img {
@@ -346,9 +349,6 @@ footer a {
 	color: rgb(0, 56, 28);
 }
 
-.productgrid {
-	
-}
 .productgrid div {
 	display: inline-block;
 }
@@ -368,10 +368,11 @@ font-size: 60px;
 	width: 50%;
 }
 
-.altheader 
+.altheader {
 	position: absolute;
 	justify-content: center;
 }
+
 .description {
 	margin-bottom: 50px;
 }
@@ -436,5 +437,6 @@ font-size: 60px;
 @media (max-width: 480px) {
 	.gallerylogo img {
 		width: 100%;
+		margin-bottom: 20px;
 	}
 }
