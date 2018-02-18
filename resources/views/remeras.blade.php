@@ -14,7 +14,7 @@
 
 	<div class="productsgrid row">
 			@foreach ($remeras as $remera)
-			<article class="products text-center col-md-3">
+			<article class="products text-center col-md-4">
 				<img src="/storage/{{$remera->fotopath}}">
 				<h3 >$350</h3>
 				<button type="button" class="btn btn-info">COMPRAR</button>
